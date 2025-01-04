@@ -8,6 +8,7 @@
     background-position: center;
     background-size: cover;
     margin-bottom: clamp(0.563rem, 0rem + 2.5dvb, 2.25rem);
+    border: 1px solid black;
 }
 
 .heading {
@@ -32,8 +33,8 @@
 }
 
 .content-section {
-    margin-left: clamp(1.125rem, 0.083rem + 4.63dvb, 4.25rem);
-    margin-right: clamp(1.125rem, 0.083rem + 4.63dvb, 4.25rem);
+    margin-left: 5vi;
+    margin-right: 5vi;
     border: 1px solid rgb(236, 16, 137);
 }
 
@@ -42,8 +43,6 @@
     margin-top: clamp(1.438rem, 0.021rem + 6.296dvb, 5.688rem);
     margin-bottom: clamp(0.5rem, 0rem + 2.222dvb, 2rem);
 }
-
-.content__text-block {}
 
 .content__paragraph {
     padding-bottom: 0;
@@ -67,6 +66,7 @@
 
 .content__list {
     padding-inline-start: 40px;
+    list-style-type: none;
 }
 
 .content__list li {
@@ -79,7 +79,56 @@
     display: inline-block;
     width: 15px;
     height: 15px;
-    margin-right: 8px;
+    margin-left: -25px;
     background-image: url(/images/marker-light.svg);
     background-repeat: no-repeat;
+
+}
+
+.content__text-block .content__list li:not(:last-child)  {
+    padding-bottom: 10px;
+}
+
+.content__text-block_type_first-lettered:first-letter {
+    background-color: var(--accent-color);
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-right: 1px;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.content__figure {
+    margin-top: clamp(1.438rem, 0.021rem + 6.296dvb, 5.688rem);
+    margin-bottom: clamp(1.438rem, 0.021rem + 6.296dvb, 5.688rem);
+    width: calc(100% + 144px);
+    position: relative;
+    margin-left: -72px; 
+    border-bottom: 1px solid var(--text-color);
+}
+
+.content__picture {
+    width: 100%;
+}
+
+.content__picture-caption {
+    margin-top: clamp(1.219rem, 1.208rem + 0.046dvb, 1.25rem);
+    margin-bottom: clamp(1.219rem, 1.208rem + 0.046dvb, 1.25rem);
+    color: inherit;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.content__card {
+    border: 1px solid var(--text-color);
+}
+
+.content__card-title {
+    font-size: 60px;
+}
+
+.colored-text {
+    
 }
