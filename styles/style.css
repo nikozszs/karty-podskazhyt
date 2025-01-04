@@ -52,6 +52,34 @@
     font-size: 18px;
 }
 
+.content__blockquote {
+    margin-bottom: 1.5em;
+    line-height: 200%;
+    font-size: 18px;
+    font-style: italic;
+    margin-left: clamp(3.688rem, 0.042rem + 16.204dvb, 14.625rem);
+    margin-right: clamp(3.688rem, 0.042rem + 16.204dvb, 14.625rem);
+}
+
 .content__text-block .content__paragraph:not(:last-child)  {
     padding-bottom: 1.5em;
+}
+
+.content__list {
+    padding-inline-start: 40px;
+}
+
+.content__list li {
+    position: relative;
+}
+  
+.content__list li::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+    background-image: url(/images/marker-light.svg);
+    background-repeat: no-repeat;
 }
