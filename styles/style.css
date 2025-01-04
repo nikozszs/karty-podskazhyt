@@ -1,22 +1,57 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 .page {
-  min-inline-size: 360px;
-  margin: 0;
+    min-inline-size: 320px;
+    min-block-size: 100dvb;
+    font-family: var(--main-font), sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: clamp(0.563rem, 0rem + 2.5dvb, 2.25rem);
 }
 
-p,
-h1,
-h2,
-h3,
-blockquote,
-ul,
-ol,
-li,
-figure {
-  margin: 0;
+.heading {
+    font-family: var(--accent-font), sans-serif;
+    line-height: 90%;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.header {
+    margin-top: clamp(2.25rem, 0rem + 10dvb, 9rem);
+    border: 1px solid black;
+}
+
+.header__title {
+    font-size: clamp(3.75rem, 2.5rem + 5.556dvb, 7.5rem);
+    margin-left: clamp(1.125rem, 0.083rem + 4.63dvb, 4.25rem);
+    margin-right: clamp(1.125rem, 0.083rem + 4.63dvb, 4.25rem);
+    margin-bottom: 40px;
+}
+
+.content-section {
+    margin-left: clamp(1.125rem, 0.083rem + 4.63dvb, 4.25rem);
+    margin-right: clamp(1.125rem, 0.083rem + 4.63dvb, 4.25rem);
+    border: 1px solid rgb(236, 16, 137);
+}
+
+.content__title {
+    font-size: 30px;
+    margin-top: clamp(1.438rem, 0.021rem + 6.296dvb, 5.688rem);
+    margin-bottom: clamp(0.5rem, 0rem + 2.222dvb, 2rem);
+}
+
+.content__text-block {}
+
+.content__paragraph {
+    padding-bottom: 0;
+    color: inherit;
+    font-family: var(--main-font);
+    font-size: 18px;
+}
+
+.content__text-block .content__paragraph:not(:last-child)  {
+    padding-bottom: 1.5em;
 }
