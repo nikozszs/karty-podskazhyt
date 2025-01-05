@@ -18,6 +18,25 @@
   <body class="page theme_dark">
     <header class="header">
       <h1 class="header__title heading">Карты подскажут</h1>
+      <nav class="header__menu content-section">
+        <div class="header__logo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="135" height="25">
+            <use href="/images/logo.svg#logo"></use>
+          </svg>
+        </div> 
+        <ul class="header__theme-toggler">
+          <li class="header__theme-button">
+            <button type="button" data-theme="dark" class="header__theme-button_type_dark">
+              Темная
+            </button>
+          </li>
+          <li class="header__theme-button">
+            <button disabled type="button" data-theme="light" class="header__theme-button_type_light header__theme-button_is-active">
+              Светлая
+            </button>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="content content-section">
       <h2 class="content__title heading">Креативный подход к решению проблем</h2>
@@ -46,9 +65,11 @@
         <p class="content__paragraph">Вот что сам Брайан Ино рассказывает о создании Oblique Strategies:</p>
         <blockquote class="content__blockquote">«Эти карты появились, потому что я оказывался в рабочих ситуациях (особенно в звукозаписывающих студиях), когда из-за паники быстро забывал, что кроме самых очевидных решений были и другие — косвенные. И часто именно такие неочевидные способы выдавали гораздо более интересные результаты, чем решения „в лоб“».</blockquote>
         <p class="content__paragraph">Таким образом, колода Ино поощряет нас видеть препятствия не как тупики, а как отправные точки для поиска более интересных решений.</p>
-        <p class="content__paragraph">И кстати, сейчас необязательно охотиться за редкими физическими колодами Oblique Strategies — тем более, что их моментально разбирают фанаты Ино. Есть довольно симпатичные <a href="https://obliquestrategies.ca/" target="_blank">веб-сайты</a> с диджитал-эквивалентами карточек и приложения <a href="https://apps.apple.com/us/app/oblique-strategies-se/id1104927011" target="_blank">для iOS</a> и <a href="https://play.google.com/store/apps/details?id=com.monoloco.obliquestrategies&hl=en_US&gl=US&pli=1" target="_blank">Android.</a></p>
+        <p class="content__paragraph">И кстати, сейчас необязательно охотиться за редкими физическими колодами Oblique Strategies — тем более, что их моментально разбирают фанаты Ино. Есть довольно симпатичные <a class="content__link" href="https://obliquestrategies.ca/" target="_blank">веб-сайты</a> с диджитал-эквивалентами карточек и приложения <a class="content__link" href="https://apps.apple.com/us/app/oblique-strategies-se/id1104927011" target="_blank">для iOS</a> и <a class="content__link" href="https://play.google.com/store/apps/details?id=com.monoloco.obliquestrategies&hl=en_US&gl=US&pli=1" target="_blank">Android.</a></p>
         <article class="content__card">
-          <h3 class="content__card-title heading">Use an <span class="colored-text">old idea</span></h3>
+          <h3 class="content__card-title heading">
+            Use<span class="colored-text">old idea</span>
+          </h3>
           <p class="content__card-subtitle">Воспользуйтесь старой идеей</p>
         </article>
       </div>
