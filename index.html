@@ -23,15 +23,15 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="135" height="25">
             <use href="/images/logo.svg#logo"></use>
           </svg>
-        </div> 
+        </div>
         <ul class="header__theme-toggler">
           <li class="header__theme-button">
-            <button type="button" data-theme="dark" class="header__theme-button_type_dark">
+            <button type="button" data-theme="dark" class="header__theme-button header__theme-button_type_dark">
               Темная
             </button>
           </li>
           <li class="header__theme-button">
-            <button disabled type="button" data-theme="light" class="header__theme-button_type_light header__theme-button_is-active">
+            <button disabled type="button" data-theme="light" class="header__theme-button header__theme-button_type_light header__theme-button_is-active">
               Светлая
             </button>
           </li>
@@ -82,11 +82,10 @@
           <li>MGMT.</li>
         </ul>
       </div>
-
     </main>
-    <footer class="footer"></footer>
-
-    <!-- Раскомментируйте строчку ниже, когда вёрстка будет готова. Если вы назвали все классы. как нужно, переключатель темы будет работать -->
-    <!-- <script src="./scripts/theme-changer.js"></script> -->
+    <footer class="footer">
+      <p class="footer__copyright">VЁRSTKA</p>
+    </footer>
+    <script src="./scripts/theme-changer.js"></script>
   </body>
 </html>

@@ -1,0 +1,15 @@
+:root .theme_dark {
+  --bg-color: #1f1e1e;
+  --text-color: #B3B3B3;
+  --accent-color: transparent;
+  --main-font: 'Raleway';
+  --accent-font: 'STIX Two Text';
+}
+
+:root .theme-light {
+  --bg-color: #F5F5F5;
+  --text-color: #312A4E;
+  --accent-color: #FFAB6B;
+  --main-font: 'Raleway';
+  --accent-font: 'STIX Two Text'; 
+}
